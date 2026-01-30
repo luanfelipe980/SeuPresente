@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Título -->
+  <title>Nosso Tempo</title>
+
+  <!-- Fontes -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ================= HEADER ================= -->
+   <header class="header">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="header-time">
+    <h1 class="htime">Estamos juntos há</h1>
+    <p class="ptime" id="time-together"></p>
+  </div>
+
+  <div class="header-music">
+    <h1 class="h1music">Nossas Recordações</h1>
+    <h2 class="h1dani">Eu te amo muito minha Ester</h2>
+  </div>
+</header>
+
+      <button
+        id="musicToggle"
+        class="music-btn"
+        aria-label="Tocar música"
+      >
+        🎵
+      </button>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-text">
+          <h2>Para você, meu amor 💗</h2>
+          <p>
+            Criei esse cantinho para guardar tudo o que somos.
+            Nossas fotos, nossas memórias e o amor que cresce a cada dia
+            desde que você entrou na minha vida.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn">Momentos que amo</button>
+            <button class="btn ghost" id="scrollTimeline">
+              Cada foto, uma memória
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img src="./arq/Imagem 001.jpg" alt="Imagem principal" />
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section id="timeline" class="timeline">
+        <h3>Nossa história</h3>
+        <div class="line"></div>
+
+        <div class="events">
+
+          <!-- Evento 1 -->
+          <article class="event">
+            <div class="event-card">
+              <time>31 Dez, 2025</time>
+              <h4>Memorias Favoritas❤️</h4>
+              <p>
+               <p class="ptime" id="time-together"></p>
+              <a class="linkvideo" href="./video1ano.html">Nosso Ano Novo</a>
+              </p>
+            </div>
+            
+            <div class="event-card">
+              <time>17 Jan, 2026</time>
+              <h4>Passeio no Bosque❤️</h4>
+              <p>
+               <p class="ptime" id="time-together"></p>
+              <a class="linkvideo" href="./video.html">Nosso Encontro</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="gallery" class="gallery">
+        <h3>Algumas fotos</h3>
+
+        <div class="grid">
+          <img class="thumb" src="./arq/Imagem2.jpeg" data-src="./arq/Imagem2.jpeg" alt="Foto 1" />
+          <img class="thumb" src="./arq/Imagem1.JPG" data-src="./arq/Imagem1.JPG" alt="Foto 2" />
+          <img class="thumb" src="./arq/imagem3.JPG" data-src="./arq/imagem3.JPG" alt="Foto 3" />
+          <img class="thumb" src="./arq/Imagem6.JPG" data-src="./arq/Imagem6.JPG" alt="Foto 4" />
+        </div>
+      </section>
+
+      <!-- MENSAGEM FINAL -->
+      <section id="final" class="final">
+        <h3>“Uma carta só sua”</h3>
+        <p>
+          Escrito com amor ❤️💌
+        </p>
+
+        <button id="revealBtn" class="btn big">
+          Revelar mensagem
+        </button>
+
+        <div id="secret" class="secret">
+          <h4>Meu Amor❤️</h4>
+
+           <div class="fixed-message">
+          <p>
+           <p>
+  Creio que nada é por acaso. Deus cruzou nossos caminhos, e desde que te conheci,
+  eu me sinto tão bem. Você é o amor da minha vida.
+</p>
+
+<p>
+  Com você, sonho em construir uma família linda, com nossos filhos,
+  a Valentina e o Tomás. Sonho com a nossa casa, com nossas conquistas
+  e com tudo aquilo que ainda vamos viver juntos.
+</p>
+
+<p>
+  Eu penso nesse futuro todos os dias,
+  Eu te amo tanto, meu amor ❤️🥰💍
+</p>
+          </p>
+          </div>
+          <div class="secret-actions">
+            <button id="saveSecret" class="btn">
+              Salvar localmente
+            </button>
+            <button id="clearSecret" class="btn ghost">
+              Limpar
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+    Criado com ❤ por Luan Felipe (LF)
+    </footer>
+
+  </div>
+
+  <!-- ================= EXTRAS ================= -->
+  <audio id="bgMusic" src="Murart e Revna- Samba Paixão (Clipe Oficial) - Murart (youtube).mp3" loop></audio>
+
+  <div id="lightbox" class="lightbox">
+    <img id="lightboxImg" src="" alt="Imagem ampliada" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
